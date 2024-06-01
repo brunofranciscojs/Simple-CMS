@@ -1,3 +1,70 @@
+# Projeto CMS Simples
+## Visão Geral
+Este projeto é um Sistema de Gerenciamento de Conteúdo (CMS) simples que permite aos usuários gerenciar projetos, descrições, links, ícones, nomes de usuário e senhas. Foi construído usando React para o frontend e Firebase para o banco de dados backend.
+
+### Funcionalidades
+* Editar e gerenciar projetos
+* Atualizar descrições de projetos
+* Adicionar e gerenciar links
+* Atualizar e gerenciar ícones
+* Autenticação de usuário (nome de usuário e senha)
+* Tecnologias Utilizadas
+* React
+* Firebase (Firestore)
+
+### Requisitos
+* Pré-requisitos
+* Node.js instalado
+* Conta no Firebase
+
+### Instalação
+* Clone o repositório:
+
+```bash
+git clone https://github.com/brunofranciscu/cms-simples.git
+cd cms-simples
+Instale as dependências:
+```
+
+```bash
+npm install
+Configure o Firebase:
+```
+
+Vá para o console do Firebase e crie um novo projeto.
+Ative o Firestore no console do Firebase.
+Crie um arquivo .env na raiz do seu projeto e adicione sua configuração do Firebase:
+
+```bash
+REACT_APP_FIREBASE_API_KEY=sua_chave_api
+REACT_APP_FIREBASE_AUTH_DOMAIN=seu_projeto_id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=seu_projeto_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=seu_projeto_id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=seu_id_de_mensagem
+REACT_APP_FIREBASE_APP_ID=seu_app_id
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm start
+Abra seu navegador e vá para http://localhost:5173.
+```
+
+### Uso
+Faça login com seu nome de usuário e senha.
+Navegue até o painel para adicionar ou editar projetos.
+Use os formulários para atualizar descrições de projetos, links e ícones.
+
+### Licença
+Este projeto é licenciado sob a Licença MIT.
+
+
+
+
+
+
+
 # Simple CMS Project
 ## Overview
 This project is a simple Content Management System (CMS) that allows users to manage projects, descriptions, links, icons, usernames, and passwords. It is built using React for the frontend and Firebase for the backend database.
