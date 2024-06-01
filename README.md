@@ -20,7 +20,7 @@ This project is a simple Content Management System (CMS) that allows users to ma
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/simple-cms.git
+git clone https://github.com/brunofranciscu/simple-cms.git
 cd simple-cms
 Install the dependencies:
 ```
