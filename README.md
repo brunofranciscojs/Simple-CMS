@@ -1,4 +1,9 @@
 # Projeto CMS Simples
+
+## Login
+* user: jhon
+* password: 0000
+  
 ## Visão Geral
 Este projeto é um Sistema de Gerenciamento de Conteúdo (CMS) simples que permite aos usuários gerenciar projetos, descrições, links, ícones, nomes de usuário e senhas. Foi construído usando React para o frontend e Firebase para o banco de dados backend.
 
@@ -23,9 +28,9 @@ Este projeto é um Sistema de Gerenciamento de Conteúdo (CMS) simples que permi
 ```bash
 git clone https://github.com/brunofranciscu/cms-simples.git
 cd cms-simples
-Instale as dependências:
 ```
 
+Instale as dependências:
 ```bash
 npm install
 Configure o Firebase:
@@ -45,7 +50,6 @@ REACT_APP_FIREBASE_APP_ID=seu_app_id
 ```
 
 Inicie o servidor de desenvolvimento:
-
 ```bash
 npm start
 Abra seu navegador e vá para http://localhost:5173.
