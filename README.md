@@ -69,6 +69,10 @@ Este projeto é licenciado sob a Licença MIT.
 ## Overview
 This project is a simple Content Management System (CMS) that allows users to manage projects, descriptions, links, icons, usernames, and passwords. It is built using React for the frontend and Firebase for the backend database.
 
+## Login
+* user: jhon
+* password: 0000
+  
 ### Features
 * Edit and manage projects
 * Update project descriptions
