@@ -13,16 +13,16 @@ export default function Links({ content: {dados, carregando, setCarregando} }){
     }
     useEffect(() => {
         const Urls = {}, Svgs = {}
-        Object.entries(dados.links[0]).forEach(([plataforma, [link, svg]]) => {
+        Object.entries(dados.linkss[0]).forEach(([plataforma, [link, svg]]) => {
             Urls[plataforma] = link, Svgs[plataforma] = svg
         })
         setUrls(Urls), setSvgs(Svgs)
         
-    }, [dados.links])
+    }, [dados.linkss])
 
     const salvar = async (plataforma) => {
-        const linksAtualizados = [{ ...dados.links[0], [plataforma]: [urls[plataforma], svgs[plataforma]] }];
-        await updateDoc(doc(db, "sample", "5sOoDCNK2CDnLfT9J2Ml"), { links: linksAtualizados });
+        const linksAtualizados = [{ ...dados.linkss[0], [plataforma]: [urls[plataforma], svgs[plataforma]] }];
+        await updateDoc(doc(db, "sample", "5sOoDCNK2CDnLfT9J2Ml"), { linkss: linksAtualizados });
     }
     const atualizarURL = (e, plataforma) =>{
         setUrls({...urls, [plataforma]:e.target.value})
@@ -33,8 +33,8 @@ export default function Links({ content: {dados, carregando, setCarregando} }){
     return(
         <div className='flex flex-col gap-12 w-full max-w-[1366px] cl:pl-8 pl-1'>
 
-        {dados.links && 
-            Object.entries(dados.links[0]).map(([plataforma, [link, svg]]) => (
+        {dados.linkss && 
+            Object.entries(dados.linkss[0]).map(([plataforma, [link, svg]]) => (
                 
                 <label className='relative' key={plataforma}>
 
